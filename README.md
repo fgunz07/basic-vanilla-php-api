@@ -13,12 +13,14 @@ Step-by-step instruction.
 
 - Install and setup [docker](https://docs.docker.com/engine/install/)
 - Make sure docker is installed properly
-    - ```bash 
+```bash 
         docker --version
         docker-compose --version
+```
 - Navigate/change directory to project root directory ex: basic-app
-    - ```bash
+```bash
         cd basic-app
+```
 - Make sure docker is running after installing Docker desktop open docker desktop
     - Let docker desktop open
 - Back to terminal where we ```cd``` run the command ```docker-compose up -d```
