@@ -23,7 +23,12 @@ Step-by-step instruction.
 ```
 - Make sure docker is running after installing Docker desktop open docker desktop
     - Let docker desktop open
-- Back to terminal where we ```cd``` run the command ```docker-compose up -d```
+- Back to terminal where we ```cd``` run the commands
+```bash
+cd <project_root>
+docker-compose build
+docker-compose up -d
+```
 - In docker desktop "containers" tab you should see a container running ```basic-app```
 
 ## Usage
