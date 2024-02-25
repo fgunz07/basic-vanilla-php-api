@@ -1,0 +1,5 @@
+mysql/*
+!mysql/.gitkeep
+
+public/uploads/*
+!public/uploads/.gitkeep

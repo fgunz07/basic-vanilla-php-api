@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge</title>
+    <link rel="stylesheet" href="/public/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="add-button">
+            <button id="btn-add">Add</button>
+        </div>
+        <h2 class="title">image file uploading app</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th class="thumbnail">Thumbnail</th>
+                    <th>Filename</th>
+                    <th>Date added</th>
+                    <th class="action-buttons">Actions</th>
+                </tr>
+            </thead>
+            <tbody id="t-body">
+                <!-- dynamic content -->
+            </tbody>
+        </table>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="close">&times;</span>
+            <form id="form">
+                <label for="title">Title:</label><br>
+                <input type="text" id="title" name="title"><br>
+                <label for="thumbnail">Thumbnail:</label><br>
+                <input type="file" id="thumbnail" name="thumbnail"><br>
+                <img id="thumb-view" height="100" width="100" />
+                <label for="filename">Filename:</label><br>
+                <input type="text" id="filename" name="filename"><br>
+                <input type="button" value="Submit" id="submit">
+                <input type="button" value="Update" id="update">
+            </form>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/public/js/module.js"></script>
+</body>
+</html>

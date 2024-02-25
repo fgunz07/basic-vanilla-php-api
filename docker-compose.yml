@@ -1,0 +1,32 @@
+version: '3'
+
+networks:
+  challenge:
+
+services:
+  apache:
+    build: 
+      context: ./.docker/php
+      dockerfile: Dockerfile
+    working_dir: /var/www/html
+    ports:
+      - 80:80
+    volumes:
+      - .:/var/www/html
+    networks:
+      - challenge
+
+  database:
+    image: mysql:latest
+    volumes:
+      - ./mysql:/var/lib/mysql
+      - ./challenge-2024-02-25_020249.sql:/docker-entrypoint-initdb.d/backup.sql
+    environment:
+      MYSQL_ROOT_PASSWORD: 'random'
+      MYSQL_DATABASE: challenge
+      MYSQL_USER: user
+      MYSQL_PASSWORD: password
+    ports:
+      - 3306:3306
+    networks:
+      - challenge
