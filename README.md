@@ -9,7 +9,7 @@ CRUD app using native PHP as API
 
 ## Setup
 
-Provide step-by-step instructions on how to install and set up the project. Include any prerequisites or dependencies that need to be installed.
+Step-by-step instruction.
 
 - Install and setup [docker](https://docs.docker.com/engine/install/)
 - Make sure docker is installed properly
